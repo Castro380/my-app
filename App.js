@@ -1,11 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Image, StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={{color:'white'}}>QUALQUER COISA</Text>
-      <StatusBar style="auto" />
+      <Text style={[styles.text]}>HELLO WORLD</Text>
+      <Image source={require('./assets/favicon.png')} 
+      style={{width: 200, height: 200}} />
     </View>
   );
 }
@@ -13,8 +14,13 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'black',
+    backgroundColor: 'blue',
     alignItems: 'center',
     justifyContent: 'center',
   },
+
+text: {
+  fontSize: 35,
+  color: 'white'
+}
 });
