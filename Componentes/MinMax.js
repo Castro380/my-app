@@ -1,11 +1,17 @@
 import { Text } from "react-native"
 
 export default function MinMax(props) {
+    const { min, max } = props;
 
-    const {min, max} = props;
-    console.warn(props);
+    if (max > min) {
+        message = `O maior valor é max = ${max}`;
+    } else if (min > max) {
+        message = `O maior valor é min = ${min}`;
+    } else {
+        message = "Os valores são iguais";
+    }
 
     return (
-        <Text>{props.parametros}</Text>
-    )
+        <Text>{message}</Text>
+    );
 }
