@@ -1,4 +1,4 @@
-import { Text } from "react-native"
+import { Text, StyleSheet } from "react-native"
 
 export default function MinMax(props) {
     const { min, max } = props;
@@ -8,10 +8,18 @@ export default function MinMax(props) {
     } else if (min > max) {
         message = `O maior valor é min = ${min}`;
     } else {
-        message = "Os valores são iguais";
+        message = "os valores sao iguais";
     }
 
     return (
-        <Text>{message}</Text>
+        <Text style={[styles.text]}>{message}</Text>
     );
 }
+
+const styles = StyleSheet.create({
+
+  text: {
+    fontSize: 25,
+    color: 'white'
+  }
+  });

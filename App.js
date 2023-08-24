@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { Image, StyleSheet, Text, View } from 'react-native';
 import MeuComponente from './Componentes/MeuComponente';
-import MinMax from './Componentes/MinMax';
+import MinMax from './Componentes/semana01/MinMax';
 
 export default function App() {
   return (
