@@ -1,5 +1,5 @@
 import { Text, View } from "react-native/types";
-
+nop
 export default function MeuComponente() {
 
     

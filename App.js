@@ -2,6 +2,9 @@ import { StatusBar } from 'expo-status-bar';
 import { Image, StyleSheet, Text, View } from 'react-native';
 import MinMax from './Componentes/semana01/MinMax';
 import NumeroAleatorio from './Componentes/semana02/NumeroAleatorio';
+import Botao from './Componentes/semana03/Botao';
+import Contador from './Componentes/semana03/Contador';
+import DigiteSeuNome from './Componentes/semana03/DigiteSeuNome';
 
 export default function App() {
   return (
@@ -9,6 +12,9 @@ export default function App() {
       <MinMax min={10} max={20} />
       <NumeroAleatorio min={10} max={1000} />
       <Text style={[styles.text]}>HELLO WORLD</Text>
+      <Botao />
+      <Contador />
+      <DigiteSeuNome />
       <Image source={require('./assets/favicon.png')} 
       style={{width: 200, height: 200}} />
     </View>
