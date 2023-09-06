@@ -8,6 +8,8 @@ import Contador from './Componentes/semana03/Contador';
 import DigiteSeuNome from './Componentes/semana03/DigiteSeuNome';
 import Filho from './Componentes/semana04/comunicacao-direta/Filho';
 import Pai from './Componentes/semana04/comunicacao-direta/Pai';
+import IntroducaoEstilos from './Componentes/semana04/IntroducaoEstilos';
+import ParOuImpar from './Componentes/semana04/ParOuImpar';
 
 export default function App() {
   return (
@@ -19,8 +21,13 @@ export default function App() {
       <Contador />
       <DigiteSeuNome /> 
       <Pai/>={require('./assets/favicon.png')} 
-      style={{width: 200, height: 200}} />*/}
-      <BiscoitoDaSorte/>
+      {<ComponenteControlado />}
+      {<DigiteSeuNome />}
+      style={{width: 200, height: 200}} />
+      <BiscoitoDaSorte/>*/}
+      <IntroducaoEstilos/>
+      <ParOuImpar/>
+      
     </View>
   );
 }

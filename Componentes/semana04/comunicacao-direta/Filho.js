@@ -1,15 +1,13 @@
-import { Button, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { StyleSheet, Text, View } from 'react-native'
 
-export default function Filho() {
-  return (
-    <View>
-      <Button title='Enviar'
-      onPress={()=> alert('CLICOU')}
+export default function Filho(props) {
 
-      />
-    </View>
-  )
+    return (
+        <View>
+            <Text style={{ fontSize: 30}}>{props.nome} {props.sobreNome}</Text>
+        </View>
+    )
 }
 
 const styles = StyleSheet.create({})
