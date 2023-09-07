@@ -1,23 +1,24 @@
-import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { StyleSheet, Text, View } from 'react-native'
 
 export default function ParOuImpar(props) {
 
-    const numero = props.numero.
-    let = resultado = ''
+    const numero = props.numero
+    
+    // let resultado = ''
 
-    if (numero % 2 === 0) {
-        resultado = 'Par'
-    } else {
-        resultado = 'Impar'
-    };
-
-  return (
-    <View>
-      <Text style={{fontSize: 30}}>o numero {numero} é :</Text>
-      <Text>o numero {numero % 2 === 0 ? 'Par' : 'Impar' } é :</Text>
-    </View>
-  )
+    // if (numero % 2 === 0) {
+    //     resultado = 'Par'
+    // } else {
+    //     resultado = 'Impar'
+    // }
+ 
+    return (
+        <View>
+            <Text style={{ fontSize: 30 }}>O numero {numero} é: </Text>
+            <Text style={{ color: numero % 2 === 0 ? 'blue' : 'red', fontSize: 30 }}>{numero % 2 === 0 ? 'Par' : 'Impar' }</Text>
+        </View>
+    )
 }
 
 const styles = StyleSheet.create({})
